@@ -84,7 +84,7 @@
               <!-- /Logo -->
               
 
-              <form id="formAuthentication" class="mb-3" action="{{route('post-login')}}" method="POST">
+              <form id="formAuthentication" class="mb-3" action="{{ route('post-login') }}" method="POST">
                 @csrf
                 <div class="mb-3">
                   <label for="email" class="form-label">Email or Username</label>
@@ -156,7 +156,7 @@
     <script src="../assets/js/main.js"></script>
 
     <!-- Page JS -->
-
+    @include('pages.script')
     @include('pages.alert')
    
     <!-- Place this tag in your head or just before your close body tag. -->
